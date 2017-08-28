@@ -19,4 +19,8 @@ export class AppComponent {
   selectUser(user) {
     this.activeUser = user;
   }
+
+  onUserCreated(event){
+    console.log(event);
+  }
 }

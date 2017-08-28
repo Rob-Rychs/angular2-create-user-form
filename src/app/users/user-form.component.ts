@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { User } from '../models/user';
 
 @Component({
@@ -12,7 +12,7 @@ import { User } from '../models/user';
     }
   `],
   template: `
-    <form #form="ngForm" (submit)="onSubmit()">
+    <form #form="ngForm" (ngSubmit)="onSubmit()" *ngIf="active"> 
 
     form is valid: {{form.valid}}
   
@@ -31,9 +31,16 @@ import { User } from '../models/user';
   `
 })
 export class UserFormComponent {
+  @Output() userCreated = new EventEmitter();
   newUser: User = new User();
+  active: boolean = true;
 
   onSubmit() {
-    console.log('are you working?');
+    // show the event that the user was created
+    this.userCreated.emit({ user: this.newUser });
+
+    this.newUser = new User();
+    this.active = false;
+    setTimeout(()=> this.active = true, 0);
   }
 }

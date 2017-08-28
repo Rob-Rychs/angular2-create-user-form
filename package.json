@@ -1,6 +1,7 @@
 {
-  "name": "my-app",
-  "version": "0.0.0",
+  "name": "angular2-create-user-form",
+  "version": "0.0.1",
+  "author": "rob-rychs",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
