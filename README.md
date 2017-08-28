@@ -1,4 +1,14 @@
-# MyApp
+# Angular2 user subscribe-form
+
+2-way data binding, event-handling, poperty-binding, lazy bootstrap,
+
+todos:
+-Ngrouter
+-animations
+-buttons
+-styling
+-jsflashcards <a href="https://jsflashcards-831b.restdb.io/rest/flashcards?max=2">json endpoint</a>
+-pushjs
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.1.
 

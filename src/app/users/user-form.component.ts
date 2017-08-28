@@ -32,4 +32,8 @@ import { User } from '../models/user';
 })
 export class UserFormComponent {
   newUser: User = new User();
+
+  onSubmit() {
+    console.log('are you working?');
+  }
 }

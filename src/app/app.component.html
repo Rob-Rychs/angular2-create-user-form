@@ -2,7 +2,7 @@
 <header>
   <nav class="navbar navbar-inverse">
     <div class="navbar-header">
-      <a href="/" class="navbar-brand">My Angular 2 app!</a>
+      <a href="/" class="navbar-brand">Sign up by creating a user. It's free 😀 </a>
     </div>
   </nav>
 </header>
@@ -27,8 +27,8 @@
     
      <user-profile [user]="activeUser"></user-profile>
       
-      <div class="jumbotron" *ngIf="!activeUser">
-        <span class="glyphicon glyphicon-hand-left">
+      <div class="jumbotron text-center" *ngIf="!activeUser">
+        <span class="glyphicon glyphicon-hand-left ">
           <h2>Choose a user</h2>
         </span>
       </div>
