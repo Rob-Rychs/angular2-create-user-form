@@ -22,5 +22,6 @@ export class AppComponent {
 
   onUserCreated(event){
     console.log(event);
+    this.users.push(event.user);
   }
 }
