@@ -3,10 +3,10 @@ import { MailService } from '../mail.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl: './ng2-vid-tut.component.html',
+  styleUrls: ['./ng2-vid-tut.component.css']
 })
-export class AppComponent {
+export class ng2vidtutComponent {
   title = 'the Angular2 tutotial';
 
 
